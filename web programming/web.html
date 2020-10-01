@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head></title>
+<meta charset="utf-8">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    /* style of header*/
+    header{
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color:white;
+    }
+    /* create 2 col/boxes that floats next to each other*/
+    nav{
+        float:left;
+        width: 30%;
+        height: 300px;/*only for demonstration,should be removed*/
+        background: #ccc;
+        padding: 20px;
+    }
+    article{
+        float: left;
+        padding: 20px;
+        width:70%;
+        background-color: #ebc8c8;
+        height: 300px;/*only for demonstration,should be removed*/
+    }
+    /*clear float after the column*/
+    section:after{
+        content: "";
+        display: table;
+        clear:both;
+    }
+    /*style for footer*/
+    footer{
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color:white;
+    }
+</style>
+<head><title>
+Layouts</title>
+</head>
+<body>
+    <header>
+        <h2>Vidyavardhaka college of engineering</h2>
+        <img src = "download.jfif" width="50" height="50" align="left">
+        <input type="button" value="login" align="right">
+    </header>
+
+    <section>
+        <nav>
+        <ul>
+            <li><a href="#">A block</a><li>
+            <li><a href="#">B block</a><li>
+            <li><a href="#">C block</a><li>
+        </ul>
+        </nav>
+
+        <article>
+            <h1>VVCE</h1>
+            <p><h3>column 2</h2>
+            Established in 1997, VVCE is an autonomous institute affiliated
+            to Visvesvaraya Technological University (VTU), Belagavi,
+            approved by AICTE & UGC, New Delhi and recognized by Govt.
+            of Karnataka. Five UG programs are accredited by National Board
+            of Accreditation, New Delhi. VVCE is also accredited by NAAC 
+            with “A” grade. VVCE offers six UG programs, three PG programs
+         and nine Research Centres for pursuing PhD programs, with a total 
+         student population of over 3200.</p>
+         <img src = "vvce.jpeg" alt="vvce" width="250" height="150" align="right">
+        </article>
+    </section>
+    
+<footer>
+    <p>Footer: developed by vaibhavi r raman</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>CSS Template</title>
+<meta charset="utf-8">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    /* style of header*/
+    header{
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color:white;
+    }
+    /* create 2 col/boxes that floats next to each other*/
+    nav{
+        float:left;
+        width: 30%;
+        height: 300px;/*only for demonstration,should be removed*/
+        background: #ccc;
+        padding: 20px;
+    }
+    article{
+        float: left;
+        padding: 20px;
+        width:70%;
+        background-color: #f1f1f1;
+        height: 300px;/*only for demonstration,should be removed*/
+    }
+    /*clear float after the column*/
+    section:after{
+        content: "";
+        display: table;
+        clear:both;
+    }
+    /*style for footer*/
+    footer{
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color:white;
+    }
+</style>
+<head><title>
+Layouts</title>
+</head>
+<body>
+    <h2>Css Float</h2>
+    <p>In this example, we have created a header, two columns/boxes and a footer. 
+        On smaller screens, the columns will stack on top of each other. Resize 
+        the browser window to see the responsive effect (you will learn more
+         about this in our next chapter - HTML Responsive.)</p>
+    <header>
+        <h2>College</h2>
+    </header>
+
+    <section>
+        <nav>
+        <ul>
+            <li><a href="#">CS</a><li>
+            <li><a href="#">EC</a><li>
+            <li><a href="#">ME</a><li>
+        </ul>
+        </nav>
+
+        <article>
+            <h1>VVCE</h1>
+            <p><h3>column 2</h2>
+            Established in 1997, VVCE is an autonomous institute affiliated
+            to Visvesvaraya Technological University (VTU), Belagavi,
+            approved by AICTE & UGC, New Delhi and recognized by Govt.
+            of Karnataka. Five UG programs are accredited by National Board
+            of Accreditation, New Delhi. VVCE is also accredited by NAAC 
+            with “A” grade. VVCE offers six UG programs, three PG programs
+         and nine Research Centres for pursuing PhD programs, with a total student population of over 3200.</p>
+        </article>
+    </section>
+    
+<footer>
+    <p>Footer</p>
+</footer>
+</body>
+</html>
